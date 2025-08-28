@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 //Destructuring
-
+/*
 const book = getBook(1);
 // const title = books.title;
 // const author = books.author;
@@ -153,7 +153,7 @@ const {title, author, pages, publicationDate, genres, hasMovieAdaptation} = book
 
 console.log(title, author, genres);
 
-const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
+const [primaryGenre, secondaryGenre, ...otherGeres] = genres;
 console.log(primaryGenre, secondaryGenre, otherGenres);
 
 const newGenres = ['epic fantasy', ...genres];
@@ -168,5 +168,13 @@ const updatedBook = {
   pages: 1210
 };
 
-
 console.log(updatedBook);
+const summary = `${title} a book`;
+summary;
+
+*/
+const books = getBooks();
+const bookTitle = books.map(a => a.title);
+bookTitle;
+const sorted = bookTitle.slice().sort((a, b) => a.length - b.length);
+sorted;
