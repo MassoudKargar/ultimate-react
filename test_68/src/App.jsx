@@ -58,7 +58,7 @@ function Counter() {
     <Button onClick={function () {
       setCount(x => x - step);
     }} color="secondary">-</Button>
-    <CssTextField variant="standard" value={count} onChange={(x) => setCount(x.target.value)}/>
+    <CssTextField variant="standard" value={count} onChange={(x) => setCount(Number(x.target.value))}/>
     <Button color="secondary" onClick={
       function () {
         setCount(x => x + step)
@@ -66,12 +66,12 @@ function Counter() {
 
     }>+</Button>
     <br/>
-    <span>{count === 0
+    <p> <span>{count === 0
       ? "Today is "
       : count > 0
         ? `${Math.abs(count)} days from today is `
         : `${Math.abs(count)} days ago was `}</span>
-    <span>{date.toDateString()}</span>
+      <span>{date.toDateString()}</span></p>
   </>
 }
 
