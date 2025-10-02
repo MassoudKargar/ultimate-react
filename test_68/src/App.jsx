@@ -1,6 +1,5 @@
 import './App.css'
-import {Button, TextField} from "@mui/material";
-import Slider from '@mui/material/Slider';
+import {Button, Slider, styled, TextField} from "@mui/material";
 import {useState} from "react";
 
 function App() {
@@ -11,6 +10,29 @@ function App() {
     </>
   )
 }
+
+const CssTextField = styled(TextField)({
+  '& label.Mui-focused': {
+    color: '#A0AAB4',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: '#B2BAC2',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#E0E3E7',
+    },
+    '&:hover fieldset': {
+      borderColor: '#B2BAC2',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#6F7E8C',
+    },
+  },
+  '& .MuiInputBase-input': {
+    color: '#e0e0e0 !important',
+  }
+});
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -29,14 +51,14 @@ function Counter() {
       marks
       min={0}
       max={10}
-      onChange={(e) => setStep(e.target.value)}
+      onChange={(e) => setStep(Number(e.target.value))}
     />
 
     <br/>
     <Button onClick={function () {
       setCount(x => x - step);
     }} color="secondary">-</Button>
-    <TextField id="standard-basic" variant="standard" value={count} onChange={(x) => setCount(x.target.value)}/>
+    <CssTextField variant="standard" value={count} onChange={(x) => setCount(x.target.value)}/>
     <Button color="secondary" onClick={
       function () {
         setCount(x => x + step)
