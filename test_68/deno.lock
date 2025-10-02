@@ -5,6 +5,7 @@
     "npm:@emotion/styled@^11.14.1": "11.14.1_@emotion+react@11.14.0__react@19.1.1_react@19.1.1",
     "npm:@eslint/js@^9.36.0": "9.36.0",
     "npm:@fontsource/roboto@^5.2.8": "5.2.8",
+    "npm:@mui/icons-material@^7.3.3": "7.3.3_@mui+material@7.3.2__@types+react@19.1.13__react@19.1.1__react-dom@19.1.1___react@19.1.1__@emotion+react@11.14.0___react@19.1.1__@emotion+styled@11.14.1___@emotion+react@11.14.0____react@19.1.1___react@19.1.1_@types+react@19.1.13_react@19.1.1_@emotion+react@11.14.0__react@19.1.1_@emotion+styled@11.14.1__@emotion+react@11.14.0___react@19.1.1__react@19.1.1_react-dom@19.1.1__react@19.1.1",
     "npm:@mui/material@^7.3.2": "7.3.2_@types+react@19.1.13_react@19.1.1_react-dom@19.1.1__react@19.1.1_@emotion+react@11.14.0__react@19.1.1_@emotion+styled@11.14.1__@emotion+react@11.14.0___react@19.1.1__react@19.1.1",
     "npm:@types/react-dom@^19.1.9": "19.1.9_@types+react@19.1.13",
     "npm:@types/react@^19.1.13": "19.1.13",
@@ -407,6 +408,18 @@
     },
     "@mui/core-downloads-tracker@7.3.2": {
       "integrity": "sha512-AOyfHjyDKVPGJJFtxOlept3EYEdLoar/RvssBTWVAvDJGIE676dLi2oT/Kx+FoVXFoA/JdV7DEMq/BVWV3KHRw=="
+    },
+    "@mui/icons-material@7.3.3_@mui+material@7.3.2__@types+react@19.1.13__react@19.1.1__react-dom@19.1.1___react@19.1.1__@emotion+react@11.14.0___react@19.1.1__@emotion+styled@11.14.1___@emotion+react@11.14.0____react@19.1.1___react@19.1.1_@types+react@19.1.13_react@19.1.1_@emotion+react@11.14.0__react@19.1.1_@emotion+styled@11.14.1__@emotion+react@11.14.0___react@19.1.1__react@19.1.1_react-dom@19.1.1__react@19.1.1": {
+      "integrity": "sha512-c/eD59CubuTDPmExgsO9LP9yvDquD9QFZY3eT9l/UJiayJgRe3Cr9JantDmQT26Gc0lozIVGMpJtMTjzDsCYpg==",
+      "dependencies": [
+        "@babel/runtime",
+        "@mui/material@7.3.2_@types+react@19.1.13_react@19.1.1_react-dom@19.1.1__react@19.1.1_@emotion+react@11.14.0__react@19.1.1_@emotion+styled@11.14.1__@emotion+react@11.14.0___react@19.1.1__react@19.1.1",
+        "@types/react",
+        "react"
+      ],
+      "optionalPeers": [
+        "@types/react"
+      ]
     },
     "@mui/material@7.3.2_@types+react@19.1.13_react@19.1.1_react-dom@19.1.1__react@19.1.1": {
       "integrity": "sha512-qXvbnawQhqUVfH1LMgMaiytP+ZpGoYhnGl7yYq2x57GYzcFL/iPzSZ3L30tlbwEjSVKNYcbiKO8tANR1tadjUg==",
@@ -1536,6 +1549,7 @@
         "npm:@emotion/styled@^11.14.1",
         "npm:@eslint/js@^9.36.0",
         "npm:@fontsource/roboto@^5.2.8",
+        "npm:@mui/icons-material@^7.3.3",
         "npm:@mui/material@^7.3.2",
         "npm:@types/react-dom@^19.1.9",
         "npm:@types/react@^19.1.13",

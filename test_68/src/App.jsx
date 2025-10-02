@@ -1,5 +1,6 @@
 import './App.css'
-import {Button} from "@mui/material";
+import {Button, TextField} from "@mui/material";
+import Slider from '@mui/material/Slider';
 import {useState} from "react";
 
 function App() {
@@ -18,18 +19,24 @@ function Counter() {
   date.setDate(date.getDate() + count);
   return <>
 
-    <Button onClick={() =>
-      setStep(x => x - 1)
-    } color="secondary">-</Button>
-    <Button>Step: {step}</Button>
-    <Button color="secondary" onClick={() =>
-      setStep(x => x + 1)
-    }>+</Button>
+    <Slider
+      aria-label="Temperature"
+      defaultValue={1}
+      getAriaValueText={(x) => `${x}%`}
+      valueLabelDisplay="auto"
+      shiftStep={30}
+      step={1}
+      marks
+      min={0}
+      max={10}
+      onChange={(e) => setStep(e.target.value)}
+    />
+
     <br/>
     <Button onClick={function () {
       setCount(x => x - step);
     }} color="secondary">-</Button>
-    <Button>Count: {count}</Button>
+    <TextField id="standard-basic" variant="standard" value={count} onChange={(x) => setCount(x.target.value)}/>
     <Button color="secondary" onClick={
       function () {
         setCount(x => x + step)
